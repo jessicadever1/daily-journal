@@ -1,23 +1,85 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: steelblue;
+}
 h1 {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
+    color: white;
+    padding-top: 1em;
+    font-size: 48px;
 }
 
 .subtitle {
     display: flex;
     justify-content: center;
+    margin-top: 0;
+    color: white;
 }
 
-.main {
+.journal {
     display: flex;
+    margin: 2em 1em 1em 1em;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .journal-entry {
-    display: flex;
-    flex-direction: column;
+    border: 3px dotted lavenderblush;
+    padding: 2em 2em 0em 2em;
 }
 
-textarea {
+.date-mood-container {
     display: flex;
-    flex-basis: 50%;
+    flex-direction: row;
+}
+
+.mood {
+    display: flex;
+    justify-content: right;
+}
+
+.textarea {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+
+
+.edit-delete-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.journal-entry-button {
+    display: flex;
+    min-width: 5em;
+    align-content: center;
+}
+
+.mood__button {
+    display: flex;
+    flex-grow: 1;
+}
+
+.date {
+    display: flex;
+    flex-grow: 2;
+    margin-right: 2em; 
+}
+
+p {
+    margin: 0;
+}
+
+aside {
+    margin: 2em;
+    border: 3px dotted lavenderblush;
+    padding: 1em 2em 2em 2em;
 }
