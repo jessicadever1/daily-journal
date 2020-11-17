@@ -13,22 +13,30 @@
     </header>
     <main class="journal">
         <article class="journal-entry">
-            <div class="date">Date</div>
-            <div class="mood">
-                <button>Mad</button>
-                <button>Sad</button>
-                <button>Neutral</button>
-                <button>Content</button>
-                <button>Happy</button>
+            <div class="date-mood-container">
+                <p>Date: </p>
+                <input class="date"></input>
+                <div class="mood">
+                    <button class="mood__button">Mad</button>
+                    <button class="mood__button">Sad</button>
+                    <button class="mood__button">Neutral</button>
+                    <button class="mood__button">Content</button>
+                    <button class="mood__button">Happy</button>
+                </div>
+            </div>    
+            <div class="textarea">
+                <textarea class="journal-entry-concepts"></textarea>
+                <textarea class="journal-entry-reflection"></textarea>
             </div>
-            <textarea class="journal-entry-concepts"></textarea>
-            <textarea class="journal-entry-reflection"></textarea>
-            <button class="journal-entry-edit">Edit</button>
-            <button class="journal-entry-delete">Delete</button>
+            <div class="edit-delete-buttons">   
+                <button class="journal-entry-button">Edit</button>
+                <button class="journal-entry-button">Delete</button>
+            </div> 
         </article>
-    </main>
-    <aside class="key-takeaways">
-        <h2>Key Takeaways</h2>
-    </aside>
+    
+        <aside class="key-takeaways">
+            <h2>Key Takeaways</h2>
+        </aside>
+    </main> 
 </body>
 </html>
