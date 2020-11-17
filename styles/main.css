@@ -1,0 +1,23 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+}
+
+.journal-entry {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    display: flex;
+    flex-basis: 50%;
+}
