@@ -13,30 +13,41 @@
     </header>
     <main class="journal">
         <article class="journal-entry">
-            <div class="date-mood-container">
-                <p>Date: </p>
-                <input class="date"></input>
-                <div class="mood">
-                    <button class="mood__button">Mad</button>
-                    <button class="mood__button">Sad</button>
-                    <button class="mood__button">Neutral</button>
-                    <button class="mood__button">Content</button>
-                    <button class="mood__button">Happy</button>
-                </div>
-            </div>    
-            <div class="textarea">
-                <textarea class="journal-entry-concepts"></textarea>
-                <textarea class="journal-entry-reflection"></textarea>
-            </div>
-            <div class="edit-delete-buttons">   
-                <button class="journal-entry-button">Edit</button>
-                <button class="journal-entry-button">Delete</button>
-            </div> 
-        </article>
-    
-        <aside class="key-takeaways">
-            <h2>Key Takeaways</h2>
-        </aside>
-    </main> 
+            <h2>Daily Journal</h2>
+            <form action="">
+                <fieldset>
+                    <label for="journalDate">Date of Entry</label>
+                    <input type="date" name="journalDate" id="journalDate">
+                </fieldset>
+                <fieldset>
+                    <label for="conceptsCovered">Concepts Covered</label>
+                    <input type="text" name="conceptsCovered" id="conceptsCovered">
+                </fieldset>
+                <fieldset>
+                    <label for="journalEntry">Journal Entry</label>
+                    <textarea name="journalEntry" id="journalEntry" cols="40" rows="5"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="mood">Mood</label>
+                    <select name="mood" id="mood">
+                            <option value="elated">Elated</option>
+                            <option value="happy">Happy</option>
+                            <option value="content">Content</option>
+                            <option value="peaceful">Peaceful</option>
+                            <option value="calm">Calm</option>
+                            <option value="neutral">Neutral</option>
+                            <option value="perplexed">Perplexed</option>
+                            <option value="confused">Confused</option>
+                            <option value="frustrated">Frustrated</option>
+                            <option value="angry">Angry</option>
+                            <option value="valleyOfDispair">Valley of Dispair</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <button>Record Journal Entry</button>
+                </fieldset>
+            </form>
+    </main>
+    <footer></footer> 
 </body>
 </html>
