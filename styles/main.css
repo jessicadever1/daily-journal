@@ -30,15 +30,58 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
     /* background-color: white; */
+    flex: 0 1 auto;
 }
 
 .journal-entry {
     border: 3px dotted lavenderblush;
-    padding: 2em 2em 0em 2em;
+    padding: 2em;
     background-color: white;
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
+    margin: .5em;
+    min-height: 3em;
+    align-content: center;
+    border: 2px dotted  rgba(8, 8, 124, 0.116);;
+}
+
+.entry__date h3 {
+    margin-top: 0;
+}
+
+.journalEntry {
+    margin-bottom: 1em;
+    padding: 2em;
+    background-color: white;
+}
+
+label {
+    min-height: 2em;
+}
+
+#journalDate {
+    min-height: 2em;
+}
+
+#conceptsCovered {
+    min-height: 2em;
+}
+
+#mood {
+    min-height: 2em;
+}
+
+button {
+    min-height: 2em;
+    margin-top: 1em;
+    background-color: rgba(8, 8, 124, 0.788);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: .5em;
 }
