@@ -30,6 +30,22 @@ const journal = [
         concept: "Terminal",
         entry: "Worked on commands and navigating terminal, then started on Martin's Aquarium.",
         mood: "Content"
+    }, 
+
+    {
+        id: 9,
+        date: "11/19/2020",
+        concept: "Automating Objects",
+        entry: "3 qualificiations of a function: 1. Does it work? 2. Is it readable? 3. Is this a good way to solve the problem?; went over the remainder operator (%) (which divides the number and then returns the value that is left over after beign divided; added three more fish, and then listed them in the order of Martin's preference.",
+        mood: "Content"
+    },
+
+    {
+        id: 10,
+        date: "11/20/2020",
+        concept: "Lab Day - Start Modern Farm",
+        entry: "Lab Day. Worked on Modern Farm, and was able to get through the first two parts pretty easily. Things got hard once I started working in the field.js and tractor.js. Left off there.",
+        mood: "Content"
     }
 ]
 
