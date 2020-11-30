@@ -52,6 +52,7 @@ fieldset {
 
 .entry__date h3 {
     margin-top: 0;
+    margin-bottom: 0px;
 }
 
 .journalEntry {
@@ -66,6 +67,7 @@ label {
 
 #journalDate {
     min-height: 2em;
+    margin-bottom: 0px;
 }
 
 #conceptsCovered {
@@ -90,3 +92,11 @@ button {
     display: flex;
     flex-direction: column-reverse;
 }
+
+.entry__mood {
+    display: flex;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: #0F3D70;
+}
+

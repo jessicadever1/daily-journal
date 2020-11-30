@@ -103,6 +103,15 @@ const journal = [
         entry: "Lab Day. Got everyone's edits pushed/ merged. Couldn't get hover to work in my England section, so updated journal instead.",
         mood: "Content"
 
+    }, 
+
+    {
+        id: 13,
+        date: "11/30/2020",
+        concept: "Recap Project - The Clinic",
+        entry: "Solo project featuring everythign we've learned. I got most of it to work. Just can't get the List page quite right",
+        mood: "Content"
+
     }
 ]
 
