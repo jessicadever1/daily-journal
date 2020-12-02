@@ -119,7 +119,16 @@ const journal = [
         date: "12/1/2020",
         concept: "Start on Book 2 - Glassdale - APIs & increased UX",
         entry: "started new project called Glassdale. So far, I've built two dataProviders, a List, a new selector module that will hold the select HTML and an option tag within it. Got help from Ryan D and Aaron R on the final part of the project",
-        mood: "Content"
+        mood: "Happy"
+
+    },
+
+    {
+        id: 15,
+        date: "12/2/2020",
+        concept: "Lab Day",
+        entry: "Finished Glassdale to chpt 3: got the selector button to provide the options that were the various types of crime. Still working on fully understanding it. Commented through it to help make sure I understood as much as possible. Then went to clinic. I got clinic to display what it was supposed to display, but I didn't do it the way the test wanted it done (basically it was just not super effiecent, so they said to refactor it. Joe walked thru it with the class around 2, so I was able to get it to display correctly AND pass the test. Now heading back to Modern Farm with 15 minutes to go in the day. Also, mood is happy. But also SO tired. Woke up out of REM this morning, and haven't recovered!",
+        mood: "Happy"
 
     }
 ]
