@@ -112,6 +112,15 @@ const journal = [
         entry: "Solo project featuring everythign we've learned. I got most of it to work. Just can't get the List page quite right",
         mood: "Content"
 
+    }, 
+
+    {
+        id: 14,
+        date: "12/1/2020",
+        concept: "Start on Book 2 - Glassdale - APIs & increased UX",
+        entry: "started new project called Glassdale. So far, I've built two dataProviders, a List, a new selector module that will hold the select HTML and an option tag within it. Got help from Ryan D and Aaron R on the final part of the project",
+        mood: "Content"
+
     }
 ]
 
