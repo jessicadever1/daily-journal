@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #0F3D70;
+    background-color: #6d597a;
     margin-left: -10em;
     margin-right: -10em;
 }
@@ -81,7 +81,7 @@ label {
 button {
     min-height: 2em;
     margin-top: 1em;
-    background-color: #0F3D70;
+    background-color: #6d597a;
     color: white;
     border: none;
     font-weight: bold;
@@ -97,6 +97,6 @@ button {
     display: flex;
     margin-top: .5em;
     margin-bottom: .5em;
-    color: #0F3D70;
+    color: #6d597a;
 }
 

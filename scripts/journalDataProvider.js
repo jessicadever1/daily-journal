@@ -130,7 +130,25 @@ const journal = [
         entry: "Finished Glassdale to chpt 3: got the selector button to provide the options that were the various types of crime. Still working on fully understanding it. Commented through it to help make sure I understood as much as possible. Then went to clinic. I got clinic to display what it was supposed to display, but I didn't do it the way the test wanted it done (basically it was just not super effiecent, so they said to refactor it. Joe walked thru it with the class around 2, so I was able to get it to display correctly AND pass the test. Now heading back to Modern Farm with 15 minutes to go in the day. Also, mood is happy. But also SO tired. Woke up out of REM this morning, and haven't recovered!",
         mood: "Happy"
 
-    }
+    },
+
+    {
+        id: 16,
+        date: "12/3/2020",
+        concept: "Coupling",
+        entry: "Coupling. It's bad. Try to avoid doing it. .sort() is neat. ",
+        mood: "Happy"
+
+    },
+
+    {
+        id: 17,
+        date: "12/4/2020",
+        concept: "Adding EventListeners & Filtering",
+        entry: "So. I'm not sure I followed the entire line of thought of how we got the convictSelctor to interact with the CriminalList in order to filter and group those who commited the same crime together. I'm going to go comment out everything to walk through all the logic and how we got there. Also, had a LinkedIn presentation from Career Services, and Sarah offically accepted a job offer, and suggested to really listen/ implement what the career services ppl say to do.",
+        mood: "Content"
+
+    }    
 ]
 
 /*
