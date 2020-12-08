@@ -148,7 +148,16 @@ const journal = [
         entry: "So. I'm not sure I followed the entire line of thought of how we got the convictSelctor to interact with the CriminalList in order to filter and group those who commited the same crime together. I'm going to go comment out everything to walk through all the logic and how we got there. Also, had a LinkedIn presentation from Career Services, and Sarah offically accepted a job offer, and suggested to really listen/ implement what the career services ppl say to do.",
         mood: "Content"
 
-    }    
+    },
+    
+    {
+        id: 18,
+        date: "12/7/2020",
+        concept: "Lab Day & Adding Event Listeners and a local API",
+        entry: "First part of the day we worked in glassdale, finishing adding the second select button that sorts criminals by their arresting officer. In the afternoon we worked through chpt seven to add a json file and then saved user input using a form. Felt pretty good about it. But having trouble understanding the flow from dataProvider to the json file.",
+        mood: "Happy"
+
+    } 
 ]
 
 /*
