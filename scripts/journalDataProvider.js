@@ -157,7 +157,16 @@ const journal = [
         entry: "First part of the day we worked in glassdale, finishing adding the second select button that sorts criminals by their arresting officer. In the afternoon we worked through chpt seven to add a json file and then saved user input using a form. Felt pretty good about it. But having trouble understanding the flow from dataProvider to the json file.",
         mood: "Happy"
 
-    } 
+    },
+
+    {
+        id: 19,
+        date: "12/8/2020",
+        concept: "Chpt 7 -> Lab Day",
+        entry: "I think today might be the day that I can enter and save input from my form fields! Because up to this point. All of these entries have been added in the DataProvider manually. Something I'd like to figure out: how to get a button that lets you flip between most recent note at top, to least recent note on top. So we did learn how to do that. But it's now after 10pm, and I'm going to bed rather than making it do that today. But tomorrow! Tomorrow I shall. Outside of class I also worked through State Fair. Went well. But I know that my code to do the Full Package is not efficient.",
+        mood: "Happy"
+
+    }
 ]
 
 /*
