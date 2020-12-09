@@ -8,7 +8,7 @@
 
 // This is the original data.
 const eventHub = document.querySelector(".journal")
-const journal = []
+let journal = []
 
 /*
     You export a function that provides a version of the
@@ -18,7 +18,8 @@ export const useJournalEntries = () => {
     const sortedByDate = journal.sort(
         (currentEntry, nextEntry) =>
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
-    ).slice()
+    )
+    console.log(journal)
     return sortedByDate
 }
 
@@ -26,7 +27,7 @@ export const getEntries = () => {
     return fetch("http://localhost:8088/entries")
         .then(response => response.json())
         .then(entries => {
-            entries = journal
+            journal = entries
         })
 }
 
@@ -34,7 +35,7 @@ const dispatchStateChangeEvent = () => {
     eventHub.dispatchEvent(new CustomEvent("journalStateChanged"))
 }
 
-export const saveJournalEntry = (entryObj) => {
+export const saveJournalEntry = (newjournalEntry) => {
     fetch("http://localhost:8088/entries", {
         method: "POST",
         headers: {
@@ -42,6 +43,6 @@ export const saveJournalEntry = (entryObj) => {
         },
         body: JSON.stringify(newjournalEntry)
     })
-        .then(getEntries())
-        .then(dispatchStateChangeEvent())
+        .then(getEntries(newjournalEntry))
+        .then(dispatchStateChangeEvent(newjournalEntry))
 }
