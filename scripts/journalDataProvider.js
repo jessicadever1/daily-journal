@@ -7,167 +7,7 @@
  */
 
 // This is the original data.
-const journal = [
-    {
-        id: 1,
-        date: "11/9/2020",
-        concept: "Introductions & Orientation",
-        entry: "John Wark did brief intro's of himself, instructors, and team at NSS. Then he did an orientation. After lunch Joe, Andy and Sarah did a deeper intro/orientation of slack, zoom, VS and the terminal.",
-        mood: "Content"
-    },
-
-    {
-        id: 2,
-        date: "11/10/2020",
-        concept: "Sit in on Demo Day",
-        entry: "The first half of the day we sat in on cohort 43's demo day.",
-        mood: "Content"
-    },
-
-    {
-        id: 3,
-        date: "11/11/2020",
-        concept: "Terminal",
-        entry: "Worked on commands and navigating terminal, then started on Martin's Aquarium.",
-        mood: "Content"
-    }, 
-
-    {
-        id: 4,
-        date: "11/12/2020",
-        concept: "GitHub & Git",
-        entry: "Went over how GitHub is a mind-boggling huge place for things to be stored/ shared on the Internet. How Git lives in the computer. And the ways that you save locally, push to GitHub, do PR's, merge, then Pull from GitHub and merge your local main.",
-        mood: "Neutral"
-    }, 
-    {
-        id: 5,
-        date: "11/13/2020",
-        concept: "Terminal & Lab Day",
-        entry: "Worked on commands and navigating terminal, then started on first group project <strong>Hello World</strong>.",
-        mood: "Content"
-    }, 
-
-    {
-        id: 6,
-        date: "11/16/2020",
-        concept: "Lab Day - Hello World, Animation Durations",
-        entry: "Worked together to finish project. Got all of our pages to look professional, similar and navigate from one to the other. Images take up all the same amt of space.",
-        mood: "Content"
-    }, 
-
-    {
-        id: 7,
-        date: "11/17/2020",
-        concept: "Review & starting into Javascript",
-        entry: "Started out with presentation. Greg did a great job on ours! Reviewed Const vs Let vs Var. DRY - Don't Repeat Yourself. undefined is a datatype. script tags are usually at the bottom, incase they need to reference something in the body. .slice() allows you to take some portion of an array and add it to a new array; if left empty it will return all.",
-        mood: "Content"
-    }, 
-
-    {
-        id: 8,
-        date: "11/18/2020",
-        concept: "Lab Day & The introduction of Lightning Exercises",
-        entry: "worked on finsihing journal, and starting modern farm. Lab Day.",
-        mood: "Content"
-    }, 
-
-    {
-        id: 9,
-        date: "11/19/2020",
-        concept: "Automating Objects",
-        entry: "3 qualificiations of a function: 1. Does it work? 2. Is it readable? 3. Is this a good way to solve the problem?; went over the remainder operator (%) (which divides the number and then returns the value that is left over after beign divided; added three more fish, and then listed them in the order of Martin's preference.",
-        mood: "Content"
-    },
-
-    {
-        id: 10,
-        date: "11/20/2020",
-        concept: "Lab Day - Start Modern Farm",
-        entry: "Lab Day. Worked on Modern Farm, and was able to get through the first two parts pretty easily. Things got hard once I started working in the field.js and tractor.js. Left off there.",
-        mood: "Content"
-    },
-
-    {
-        id: 11,
-        date: "11/23/2020",
-        concept: "Lab Day - Hello World Group Project",
-        entry: "Started with the lightning exercise about the Painter. Lab Day. The Animation Durations worked on automating all of their cities, landmarks and citizens. Almost got all things pushed and merged.",
-        mood: "Content"
-
-    },
-
-    {
-        id: 12,
-        date: "11/24/2020",
-        concept: "Lab Day - Finish Hello World",
-        entry: "Lab Day. Got everyone's edits pushed/ merged. Couldn't get hover to work in my England section, so updated journal instead.",
-        mood: "Content"
-
-    }, 
-
-    {
-        id: 13,
-        date: "11/30/2020",
-        concept: "Recap Project - The Clinic",
-        entry: "Solo project featuring everythign we've learned. I got most of it to work. Just can't get the List page quite right",
-        mood: "Content"
-
-    }, 
-
-    {
-        id: 14,
-        date: "12/1/2020",
-        concept: "Start on Book 2 - Glassdale - APIs & increased UX",
-        entry: "started new project called Glassdale. So far, I've built two dataProviders, a List, a new selector module that will hold the select HTML and an option tag within it. Got help from Ryan D and Aaron R on the final part of the project",
-        mood: "Happy"
-
-    },
-
-    {
-        id: 15,
-        date: "12/2/2020",
-        concept: "Lab Day",
-        entry: "Finished Glassdale to chpt 3: got the selector button to provide the options that were the various types of crime. Still working on fully understanding it. Commented through it to help make sure I understood as much as possible. Then went to clinic. I got clinic to display what it was supposed to display, but I didn't do it the way the test wanted it done (basically it was just not super effiecent, so they said to refactor it. Joe walked thru it with the class around 2, so I was able to get it to display correctly AND pass the test. Now heading back to Modern Farm with 15 minutes to go in the day. Also, mood is happy. But also SO tired. Woke up out of REM this morning, and haven't recovered!",
-        mood: "Happy"
-
-    },
-
-    {
-        id: 16,
-        date: "12/3/2020",
-        concept: "Coupling",
-        entry: "Coupling. It's bad. Try to avoid doing it. .sort() is neat. ",
-        mood: "Happy"
-
-    },
-
-    {
-        id: 17,
-        date: "12/4/2020",
-        concept: "Adding EventListeners & Filtering",
-        entry: "So. I'm not sure I followed the entire line of thought of how we got the convictSelctor to interact with the CriminalList in order to filter and group those who commited the same crime together. I'm going to go comment out everything to walk through all the logic and how we got there. Also, had a LinkedIn presentation from Career Services, and Sarah offically accepted a job offer, and suggested to really listen/ implement what the career services ppl say to do.",
-        mood: "Content"
-
-    },
-    
-    {
-        id: 18,
-        date: "12/7/2020",
-        concept: "Lab Day & Adding Event Listeners and a local API",
-        entry: "First part of the day we worked in glassdale, finishing adding the second select button that sorts criminals by their arresting officer. In the afternoon we worked through chpt seven to add a json file and then saved user input using a form. Felt pretty good about it. But having trouble understanding the flow from dataProvider to the json file.",
-        mood: "Happy"
-
-    },
-
-    {
-        id: 19,
-        date: "12/8/2020",
-        concept: "Chpt 7 -> Lab Day",
-        entry: "I think today might be the day that I can enter and save input from my form fields! Because up to this point. All of these entries have been added in the DataProvider manually. Something I'd like to figure out: how to get a button that lets you flip between most recent note at top, to least recent note on top. So we did learn how to do that. But it's now after 10pm, and I'm going to bed rather than making it do that today. But tomorrow! Tomorrow I shall. Outside of class I also worked through State Fair. Went well. But I know that my code to do the Full Package is not efficient.",
-        mood: "Happy"
-
-    }
-]
+const journal = []
 
 /*
     You export a function that provides a version of the
@@ -179,4 +19,12 @@ export const useJournalEntries = () => {
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
     return sortedByDate
+}
+
+export const getEntries = () => {
+    return fetch("http://localhost:8088/entries")
+        .then(response => response.json())
+        .then(entries => {
+            entries = journal
+        })
 }

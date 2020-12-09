@@ -1,21 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Daily Journal</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    <header>
-        <h1>Jess's Daily Journal</h1>
-        <div class="subtitle"><h2>NSS - Cohort 45</h2></div>
-    </header>
-    <main class="journal">
-        <article class="journal-entry">
-            <h2>Daily Journal</h2>
-            <form class="form" action="">
-                <!-- <fieldset>
+/*
+On this page, I am getting switching (my beautiful)
+HTML, so that it is no longer hard coded in 
+index.html. Rather, it will now be rendered in 
+JavaScript in this file. So. I know how I want it
+to look. I'm going to copy/paste the return from
+the index.html. Momentarily, I'm leaving it in 
+index.html also, just so it looks exactly how I
+want it to look. But now I'm going to tell it 
+where I want it to render said HTML on the doc.
+*/
+const contentTarget = document.querySelector(".form")
+
+const render = () => {
+    contentTarget.innerHTML = `
+            <fieldset>
                     <label for="journalDate">Date of Entry</label>
                     <input type="date" name="journalDate" id="journalDate">
                 </fieldset>
@@ -41,16 +39,14 @@
                             <option value="frustrated">Frustrated</option>
                             <option value="angry">Angry</option>
                             <option value="valleyOfDispair">Valley of Dispair</option>
-                    </select> -->
+                    </select>
                 </fieldset>
                 <fieldset>
                     <button>Record Journal Entry</button>
-                </fieldset>
-            </form>
-        </article>
-        <article id="entryLog"></article>
-    </main>
-    <footer></footer>
-    <script type="module" src="./scripts/main.js"></script>
-</body>
-</html>
+            </fieldset>
+    `
+}
+
+export const JournalFormComponent = () => {
+    render()
+}
