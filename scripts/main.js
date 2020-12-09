@@ -1,3 +1,5 @@
+/*Note: I'm using localhost8088 to serve json */
+
 import { EntryListComponent } from './journalEntryList.js'
 EntryListComponent()
 
