@@ -3,8 +3,13 @@
 import { EntryListComponent } from './journalEntryList.js'
 EntryListComponent()
 
-import { getEntries } from './journalDataProvider.js'
+import { getEntries, useJournalEntries, saveJournalEntry } from './journalDataProvider.js'
 getEntries()
+useJournalEntries()
+const test = saveJournalEntry()
+console.log(test)
 
 import { JournalFormComponent } from './form/JournalForm.js'
 JournalFormComponent()
+
+import "./journalEntryList.js"
