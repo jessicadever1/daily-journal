@@ -9,7 +9,10 @@ index.html also, just so it looks exactly how I
 want it to look. But now I'm going to tell it 
 where I want it to render said HTML on the doc.
 */
+import { saveJournalEntry } from '../journalDataProvider.js'
+
 const contentTarget = document.querySelector(".form")
+const eventHub = document.querySelector(".journal")
 
 const render = () => {
     contentTarget.innerHTML = `
@@ -42,7 +45,7 @@ const render = () => {
                     </select>
                 </fieldset>
                 <fieldset>
-                    <button>Record Journal Entry</button>
+                    <button id="journalEntryRecordBtn">Record Journal Entry</button>
             </fieldset>
     `
 }
@@ -50,3 +53,21 @@ const render = () => {
 export const JournalFormComponent = () => {
     render()
 }
+
+eventHub.addEventListener("click", (clickEvent) => {
+    if (clickEvent.target.id === "journalEntryRecordBtn") {
+        const date = document.querySelector("#journalDate").value
+        const concept = document.querySelector("#conceptsCovered").value
+        const entry = document.querySelector("#journalEntry").value
+        const mood = document.querySelector("#mood").value    
+    
+        const newJournalEntry = {
+            date: date,
+            concept: concept,
+            entry: entry,
+            mood: mood
+        }
+        saveJournalEntry(newJournalEntry)    
+    }
+
+})
