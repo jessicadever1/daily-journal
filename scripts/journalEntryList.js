@@ -12,37 +12,25 @@ const entryLog = document.querySelector("#entryLog")
 const eventHub = document.querySelector(".journal")
 
 eventHub.addEventListener("click", () => {
-    EntryList()
+    EntryListComponent()
 })
+
+let journalEntryCards = []
 
 export const EntryListComponent = () => {
     eventHub.addEventListener("journalStateChanged", () => {
     // Use the journal entry data from the data provider component
-    const entries = useJournalEntries()
+        getEntries().then( () => {
+            let entries = useJournalEntries()
 
-    for (const entry of entries) {
-        /*
-            Invoke the component that returns an
-            HTML representation of a single entry
-        */
-        const entryHTML = JournalEntryComponent(entry)
-        entryLog.innerHTML += entryHTML
-    }
+            for (const entry of entries) {
+                /*
+                    Invoke the component that returns an
+                    HTML representation of a single entry
+                */
+                journalEntryCards.push(JournalEntryComponent(entry))
+            }
+            entryLog.innerHTML += journalEntryCards.join("")
+        }) 
     })
 }
-const theEntries =  EntryListComponent()
-// eventHub.addEventListener("click", (clickEvent) => {
-//     if (clickEvent.target.id === "recordJournalEntry") {
-    export const EntryList = () => {
-        getEntries()
-        .then(() => {
-            const allJournalEntries = useJournalEntries()
-            EntryListComponent(allJournalEntries)
-    })
-}
-            
-eventHub.addEventListener("click", (clickEvent) => {
-    if (clickEvent.target.id === "journalEntryRecordBtn") {
-        return theEntries
-    }
-})

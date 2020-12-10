@@ -15,16 +15,16 @@ let journal = []
     raw data in the format that you want
 */
 export const useJournalEntries = () => {
-    const sortedByDate = journal.sort(
+    journal.sort(
         (currentEntry, nextEntry) =>
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
-    console.log(journal)
-    return sortedByDate
+    
+    return journal.slice()
 }
 
 export const getEntries = () => {
-    return fetch("http://localhost:8088/entries")
+    return fetch("http://localhost:8080/entries")
         .then(response => response.json())
         .then(entries => {
             journal = entries
@@ -36,7 +36,7 @@ const dispatchStateChangeEvent = () => {
 }
 
 export const saveJournalEntry = (newjournalEntry) => {
-    fetch("http://localhost:8088/entries", {
+    fetch("http://localhost:8080/entries", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -46,3 +46,4 @@ export const saveJournalEntry = (newjournalEntry) => {
         .then(getEntries(newjournalEntry))
         .then(dispatchStateChangeEvent(newjournalEntry))
 }
+
