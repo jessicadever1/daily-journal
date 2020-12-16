@@ -11,7 +11,14 @@ import { JournalEntryComponent } from "./journalEntry.js"
 const entryLog = document.querySelector("#entryLog")
 const eventHub = document.querySelector(".journal")
 
-eventHub.addEventListener("click", () => {
+eventHub.addEventListener("click", (clickEvent) => {
+    if (clickEvent.target.id === "journalEntryRecordBtn") {
+        const customEvent = new CustomEvent("journalEntryRecorded")
+        eventHub.dispatchEvent(customEvent)
+    }
+})
+
+eventHub.addEventListener("journalEntryRecorded", customEvent => {
     EntryListComponent()
 })
 
@@ -22,7 +29,6 @@ export const EntryListComponent = () => {
     // Use the journal entry data from the data provider component
         getEntries().then( () => {
             let entries = useJournalEntries()
-
             for (const entry of entries) {
                 /*
                     Invoke the component that returns an
