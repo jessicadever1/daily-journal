@@ -25,7 +25,7 @@ eventHub.addEventListener("journalEntryRecorded", customEvent => {
 let journalEntryCards = []
 
 export const EntryListComponent = () => {
-    eventHub.addEventListener("journalStateChanged", () => {
+    // eventHub.addEventListener("journalStateChanged", () => {
     // Use the journal entry data from the data provider component
         getEntries().then( () => {
             let entries = useJournalEntries()
@@ -38,5 +38,4 @@ export const EntryListComponent = () => {
             }
             entryLog.innerHTML += journalEntryCards.join("")
         }) 
-    })
 }

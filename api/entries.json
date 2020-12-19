@@ -174,6 +174,20 @@
       "entry": "",
       "mood": "content",
       "id": 25
+    },
+    {
+      "date": "2020-12-17",
+      "concept": "Lab Day - Holiday Road",
+      "entry": "Joe wanted us to do more individual coding, or at least pair coding. So paired off with Sosi, and we were able to get a save button to show up in the DOM. But then we had to work as a whole group again to get weather to load onto the page. So we got through selecting three separate parks, restaurants and eateries. We got the details buttons to render dialog boxes. At the end of the day we got to the point where we wanted to do the CSS, and a bunch of us stayed late to do that. Then I stayed later because it still wasn't pretty enough, and happened to figure out how to get the icon pictures to render in the DOM, and that's when Steph and Rickie came back (they saw I was on and were like whaaaaaat) and it was so much fun to hang out with them, code a bit more and do a deep dive of what I stumbled across to get the icons to show properly. They gave me way too much credit. Steph got me to the point where I realized the small tweak that made it correct, and not a semi cheat. It was a lot of fun :)",
+      "mood": "elated",
+      "id": 26
+    },
+    {
+      "date": "2020-12-18",
+      "concept": "Finish & Present Holiday Road -> Assessment and Recap",
+      "entry": "Finished up our project by finishing off some CSS elements. Presented it to Joe, and then worked on retro as a team. Lots of great feedback all the way around, and proud of how well we worked together. Took an individual self assessment and then we all went over them after lunch and did a recap of terms. Think we all learned a lot. I feel much better about eventListeners and imports/exports. Learned some new CSS tricks - like you can import a pic right in the CSS file.",
+      "mood": "happy",
+      "id": 27
     }
   ]
 }

@@ -19,7 +19,7 @@ export const useJournalEntries = () => {
         (currentEntry, nextEntry) =>
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
-    
+    console.log(journal)
     return journal.slice()
 }
 
@@ -31,9 +31,9 @@ export const getEntries = () => {
         })
 }
 
-const dispatchStateChangeEvent = () => {
-    eventHub.dispatchEvent(new CustomEvent("journalStateChanged"))
-}
+// const dispatchStateChangeEvent = () => {
+//     eventHub.dispatchEvent(new CustomEvent("journalStateChanged"))
+// }
 
 export const saveJournalEntry = (newjournalEntry) => {
     fetch("http://localhost:8080/entries", {
