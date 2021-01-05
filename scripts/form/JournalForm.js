@@ -41,7 +41,7 @@ const render = () => {
                             <option value="confused">Confused</option>
                             <option value="frustrated">Frustrated</option>
                             <option value="angry">Angry</option>
-                            <option value="valleyOfDispair">Valley of Dispair</option>
+                            <option value="valleyOfDespair">Valley of Dispair</option>
                     </select>
                 </fieldset>
                 <fieldset>

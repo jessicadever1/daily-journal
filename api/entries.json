@@ -188,6 +188,13 @@
       "entry": "Finished up our project by finishing off some CSS elements. Presented it to Joe, and then worked on retro as a team. Lots of great feedback all the way around, and proud of how well we worked together. Took an individual self assessment and then we all went over them after lunch and did a recap of terms. Think we all learned a lot. I feel much better about eventListeners and imports/exports. Learned some new CSS tricks - like you can import a pic right in the CSS file.",
       "mood": "happy",
       "id": 27
+    },
+    {
+      "date": "2021-01-04",
+      "concept": "Clearing Out the Holiday Cobwebs",
+      "entry": "Introduced database concepts like... normalization... and the importance of properly visualizing data. And how excel tables, for example, don't do a great job of isolating the data that needs to be grouped together/ apart from others. Then worked on daily journal with others in the most fabulous hackery :)",
+      "mood": "content",
+      "id": 28
     }
   ]
 }

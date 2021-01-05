@@ -31,9 +31,9 @@ export const getEntries = () => {
         })
 }
 
-// const dispatchStateChangeEvent = () => {
-//     eventHub.dispatchEvent(new CustomEvent("journalStateChanged"))
-// }
+const dispatchStateChangeEvent = () => {
+    eventHub.dispatchEvent(new CustomEvent("journalStateChanged"))
+}
 
 export const saveJournalEntry = (newjournalEntry) => {
     fetch("http://localhost:8080/entries", {
@@ -43,7 +43,7 @@ export const saveJournalEntry = (newjournalEntry) => {
         },
         body: JSON.stringify(newjournalEntry)
     })
-        .then(getEntries(newjournalEntry))
-        .then(dispatchStateChangeEvent(newjournalEntry))
+        .then(getEntries)
+        .then(dispatchStateChangeEvent)
 }
 
