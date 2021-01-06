@@ -31,17 +31,17 @@ const render = () => {
                 <fieldset>
                     <label for="mood">Mood</label>
                     <select name="mood" id="mood">
-                            <option value="elated">Elated</option>
-                            <option value="happy">Happy</option>
-                            <option value="content">Content</option>
-                            <option value="peaceful">Peaceful</option>
-                            <option value="calm">Calm</option>
+                            <option value="😆">Elated</option>
+                            <option value="😄">Happy</option>
+                            <option value="😊">Content</option>
+                            <option value="🙂">Peaceful</option>
+                            <option value="😌">Calm</option>
                             <option value="neutral">Neutral</option>
-                            <option value="perplexed">Perplexed</option>
-                            <option value="confused">Confused</option>
-                            <option value="frustrated">Frustrated</option>
-                            <option value="angry">Angry</option>
-                            <option value="valleyOfDespair">Valley of Dispair</option>
+                            <option value="🤔">Perplexed</option>
+                            <option value="🧐">Confused</option>
+                            <option value="😠">Frustrated</option>
+                            <option value="😡">Angry</option>
+                            <option value="🤬">Valley of Dispair</option>
                     </select>
                 </fieldset>
                 <fieldset>
@@ -70,4 +70,11 @@ eventHub.addEventListener("click", (clickEvent) => {
         saveJournalEntry(newJournalEntry)    
     }
 
+})
+
+eventHub.addEventListener("click", (clickEvent) => {
+    if (clickEvent.target.id === "journalEntryRecordBtn") {
+        const customEvent = new CustomEvent("journalEntryRecorded")
+        eventHub.dispatchEvent(customEvent)
+    }
 })

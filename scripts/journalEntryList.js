@@ -11,12 +11,12 @@ import { JournalEntryComponent } from "./journalEntry.js"
 const entryLog = document.querySelector("#entryLog")
 const eventHub = document.querySelector(".journal")
 
-eventHub.addEventListener("click", (clickEvent) => {
-    if (clickEvent.target.id === "journalEntryRecordBtn") {
-        const customEvent = new CustomEvent("journalEntryRecorded")
-        eventHub.dispatchEvent(customEvent)
-    }
-})
+// eventHub.addEventListener("click", (clickEvent) => {
+//     if (clickEvent.target.id === "journalEntryRecordBtn") {
+//         const customEvent = new CustomEvent("journalEntryRecorded")
+//         eventHub.dispatchEvent(customEvent)
+//     }
+// })
 
 eventHub.addEventListener("journalEntryRecorded", customEvent => {
     EntryListComponent()
