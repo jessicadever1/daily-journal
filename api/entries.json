@@ -195,6 +195,20 @@
       "entry": "Introduced database concepts like... normalization... and the importance of properly visualizing data. And how excel tables, for example, don't do a great job of isolating the data that needs to be grouped together/ apart from others. Then worked on daily journal with others in the most fabulous hackery :)",
       "mood": "content",
       "id": 28
+    },
+    {
+      "date": "2021-01-05",
+      "concept": "C44 Demo Day ->ERDs ->Glassdale",
+      "entry": "Awesome start to the day watching C44's demo day. It felt like I could do a lot of the features that they included in their apps; whereas the first demo day everything was so new that it was more like 'dang, how did they do that?' So excited and encouraged by that. Then worked on ERDs a bit more, and did a live code with Joe & the class in glassdale. We were working on notes, and specifcally getting to the point where we could change the suspect input to a select feature, thus eliminating random suspects who aren't on our criminal list.",
+      "mood": "😆",
+      "id": 29
+    },
+    {
+      "date": "2021-01-06",
+      "concept": "Glassdale live code -> Lab Day",
+      "entry": "Finished the notes and select feature on criminal suspects from yesterday in a live code. Then set free to work on it. Did some work on Daily Journal. Got glassdale to have a working delete note button on each note. Now going to go back and get associated dialog feature to exisit.",
+      "mood": "😄",
+      "id": 30
     }
   ]
 }
