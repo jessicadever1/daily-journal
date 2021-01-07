@@ -209,6 +209,13 @@
       "entry": "Finished the notes and select feature on criminal suspects from yesterday in a live code. Then set free to work on it. Did some work on Daily Journal. Got glassdale to have a working delete note button on each note. Now going to go back and get associated dialog feature to exisit.",
       "mood": "😄",
       "id": 30
+    },
+    {
+      "date": "2021-01-07",
+      "concept": "Live code Chpt 15 -> Lab Time -> Live code Chpt 16",
+      "entry": "Worked through many to many relationships. Joe explained how .then() uses function references, rather than calling a function. this way it runs at the correct time, and not as it hits the .then(). ",
+      "mood": "😌",
+      "id": 31
     }
   ]
 }
