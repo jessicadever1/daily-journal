@@ -216,6 +216,27 @@
       "entry": "Worked through many to many relationships. Joe explained how .then() uses function references, rather than calling a function. this way it runs at the correct time, and not as it hits the .then(). ",
       "mood": "😌",
       "id": 31
+    },
+    {
+      "date": "2021-01-08",
+      "concept": "Lab Day",
+      "entry": "Kept working though Glassdale.",
+      "mood": "😊",
+      "id": 32
+    },
+    {
+      "date": "2021-01-11",
+      "concept": "Lab Morning -> Split into groups, project: NuttyShell",
+      "entry": "Almost got witnesses to show up the way that I want them to. I can't them to replace the criminals, they just push them down the criminals at this point. But I did get the words on the button to change from 'witness statements' to 'criminal cards', when clicked. Then when it says criminal cards, it can be clicked again and will render only the criminals. But then you can't switch it back to witness statements. ",
+      "mood": "😊",
+      "id": 33
+    },
+    {
+      "date": "2021-01-12",
+      "concept": "NuttyShells",
+      "entry": "Got our ERD done and approved. Moved on to framework, got that all set too. Got wireframe done. Next step is to finish the EventHub listeners. Bah. ",
+      "mood": "😊",
+      "id": 34
     }
   ]
 }
