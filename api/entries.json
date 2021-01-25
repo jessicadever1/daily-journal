@@ -237,6 +237,62 @@
       "entry": "Got our ERD done and approved. Moved on to framework, got that all set too. Got wireframe done. Next step is to finish the EventHub listeners. Bah. ",
       "mood": "😊",
       "id": 34
+    },
+    {
+      "date": "2021-01-25",
+      "concept": "React, Adding Animals -> Lab Day",
+      "entry": "We're getting used to using React. Today we got to chapter 8 in livecode and are working on the adding animals via a form built with react. Conceptually, I think I understand. I just feel like I need reps to really get it, and to remember/ understand all the parts. Got first bit of feedback on capstone, and it looks like I need to give it a little more meat. Which is totally fair and true. But wondering if Joe (my mentor for this capstone) had soemthing in mind when he suggested that.",
+      "mood": "🙂",
+      "id": 35
+    },
+    {
+      "date": "2021-01-22",
+      "concept": "Lab Day",
+      "entry": "We're diving into react in Book 4. Today we worked on chapters 4-8, and did a little bit of work on capstone proposal and submitted it.",
+      "mood": "neutral",
+      "id": 36
+    },
+    {
+      "date": "2021-01-19",
+      "concept": "Hair-Potter -> React",
+      "entry": "This was really frustrating because I couldn't get the Hairy-Potter app to work. In the end, I realized I didn't have a stinking 'return' in my use funciton - of all things! But, it really did make me nervous to take so long to catch that error, and then need to use an example to help make sure I corrected all the things i \"broke\" while trying to figure out what it was. It was a hard day. Then we started React. Which seems interesting. There's been such a build up to it, that a few of us are like... I'm not sure underwhelmed is the word. But, I don't know. Maybe just too soon to tell.",
+      "mood": "😠",
+      "id": 37
+    },
+    {
+      "date": "2021-01-20",
+      "concept": "Kennels",
+      "entry": "More on react. ",
+      "mood": "🤔",
+      "id": 38
+    },
+    {
+      "date": "2021-01-21",
+      "concept": "React",
+      "entry": "More react.",
+      "mood": "🤔",
+      "id": 39
+    },
+    {
+      "date": "2021-01-13",
+      "concept": "NuttyShells",
+      "entry": "Each of us made providers, and took on different parts. I got Events, and volunteered to do Weather because they're linked. We did individual coding, and had a good bit of help on group things too.",
+      "mood": "😊",
+      "id": 40
+    },
+    {
+      "date": "2021-01-14",
+      "concept": "NuttyShells",
+      "entry": "More on group project.",
+      "mood": "😊",
+      "id": 41
+    },
+    {
+      "date": "2021-01-15",
+      "concept": "NuttyShells",
+      "entry": "A little concerned that we haven't done as much as I would have liked by EOD today. I have some things that I want to improve on Events, and haven't done weather at all. But feeling like I've taken over because I CSSed the whole thing. Idk.",
+      "mood": "neutral",
+      "id": 42
     }
   ]
 }
